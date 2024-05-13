@@ -42,8 +42,8 @@ function Movie({movie}) {
         <p className="card-text">{movie.genre}</p>
         <p>rating : {movie.rating ? movie.rating : <p>no Rating yet</p>}</p>
          rating <input value={rating} onChange={change} type="number" min={1} max={5}/>
-        <button onClick={()=>add()}>add rating</button>
-        <button onClick={()=>add2()}>add to wishlist</button>
+        <button  className='btn btn-primary'  onClick={()=>add()}>add rating</button>
+        <button  className='btn btn-primary'  onClick={()=>add2()}>add to wishlist</button>
       </div>
     </div>
     </>

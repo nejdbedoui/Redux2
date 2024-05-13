@@ -32,8 +32,8 @@ function Movies() {
 
     return (
         <>
-            <input type="text" value={name} onChange={getname} placeholder='searsh' />
-            <button onclick={() => onclick}>Searsh</button>
+            <input  type="text" value={name} onChange={getname} placeholder='searsh' />
+            <button  className='btn btn-primary'  onclick={() => onclick}>Searsh</button>
             <div className="row">
                 {movies.length > 0 ? (
                     movies.map((movie, index) => (

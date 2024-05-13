@@ -15,10 +15,10 @@ const removeall=()=>{
   return (
     <div>
       {wishlist ? (
-      <button onClick={()=>{removeall()}}>clear</button>):null}
+      <button className='btn btn-primary' onClick={()=>{removeall()}}>clear</button>):null}
       {wishlist ? (
         wishlist.map((movie) => (
-          <div key={movie.id}>{movie.title} <button onClick={()=>remove(movie)}>remove</button></div>
+          <div key={movie.id}>{movie.title} <button  className='btn btn-primary'  onClick={()=>remove(movie)}>remove</button></div>
         ))
       ) : "empty"}
     </div>
